@@ -374,6 +374,28 @@ FRAGMENT;
     }
 
     /**
+     * take a screenshot of the full page
+     * without area
+     *
+     * @param string $filename
+     *
+     * @return \Browser\Casper
+     */
+    public function capture($filename)
+    {
+        $fragment =<<<FRAGMENT
+casper.then(function() {
+    this.capture('$filename');
+});
+
+FRAGMENT;
+
+        $this->_script .= $fragment;
+
+        return $this;
+    }
+
+    /**
      * switch to the child frame number $id
      *
      * @param unknown $id
