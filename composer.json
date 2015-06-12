@@ -5,6 +5,7 @@
     "keywords": ["phpunit", "test", "browser"],
     "type": "library",
     "license": "MIT",
+    "version": "master",
     "authors": [
         {
             "name": "GUIDET Alexandre",
