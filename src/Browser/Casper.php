@@ -381,7 +381,7 @@ FRAGMENT;
      *
      * @return \Browser\Casper
      */
-    public function capture($filename)
+    public function capture_full($filename)
     {
         $fragment =<<<FRAGMENT
 casper.then(function() {
